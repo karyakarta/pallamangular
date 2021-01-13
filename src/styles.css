@@ -1,0 +1,5 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+body {
+  color: black;
+  font-weight: 400;
+}

@@ -1,0 +1,101 @@
+ <!-- Demo -->
+  <nav class="navbar navbar-expand-md fixed-top navbar-dark" style="background-color: #212121;">
+    <a class="navbar-brand" routerLink="/">
+      <img src="assets/images/Marketflowicononly.svg" style="width: 55px">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMarketflowContent"
+      aria-controls="navbarMarketflowContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="dark-blue-text"><i
+        class="fas fa-bars fa-1x"></i></span>
+    </button>
+    <ul class="navbar-nav mr-auto">
+     <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-home"></i> Marketflow</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-file-alt"></i> Reporting</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-cog"></i> Administration</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-info"></i> About</a>
+      </li>
+    </ul>
+    <div class="nav ml-auto justify-content-end" id="navbarsExampleDefault">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link">
+            <i class="fas fa-user mr-1"></i>ruser1
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <i class="fas fa-sign-out-alt"></i>Logout
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="d-flex" id="wrapper">
+    <div id="sidebar-container" class="d-none d-md-block sidebar-collapsed">
+        <ul class="list-group">
+            <a href="#" class="bg-dark list-group-item list-group-item-action" data-toggle="tooltip" title="Premises">
+                <div class="text-nowrap d-flex w-100 justify-content-start align-items-center">
+                    <span class="fas fa-building fa-fw mr-2"></span>
+                    <span class="menu-collapsed d-none">Premises</span>
+                </div>
+            </a>
+            <a href="#" class="bg-dark list-group-item list-group-item-action" data-toggle="tooltip" title="Service Point">
+                <div class="text-nowrap d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-cogs fa-fw mr-2"></span>
+                    <span class="menu-collapsed d-none">Service Point</span>
+                </div>
+            </a>
+            <a href="#" class="bg-dark list-group-item list-group-item-action" data-toggle="tooltip" title="Process">
+                <div class="text-nowrap d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-spinner fa-fw mr-2"></span>
+                    <span class="menu-collapsed d-none">Process</span>
+                </div>
+            </a>
+            <a href="#" class="bg-dark list-group-item list-group-item-action" data-toggle="tooltip" title="Error">
+                <div class="text-nowrap d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-exclamation-triangle fa-fw mr-2"></span>
+                    <span class="menu-collapsed d-none">Error</span>
+                </div>
+            </a>
+            <a href="meterflow/marketflow/message/search" class="bg-dark list-group-item list-group-item-action" data-toggle="tooltip" title="Message Search">
+                <div class="text-nowrap d-flex w-100 justify-content-start align-items-center">
+                    <span class="far fa-envelope fa-fw mr-2"></span>
+                    <span class="menu-collapsed d-none">Message Search</span>
+                </div>
+            </a>
+            <a href="#" class="bg-dark list-group-item list-group-item-action" data-toggle="tooltip" title="File Search">
+                <div class="text-nowrap d-flex w-100 justify-content-start align-items-center">
+                    <span class="far fa-file fa-fw mr-2"></span>
+                    <span class="menu-collapsed d-none">File Search</span>
+                </div>
+            </a>
+            <a href="#" class="bg-dark list-group-item list-group-item-action" data-toggle="tooltip" title="Menu Flow Creation">
+                <div class="text-nowrap d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-plus-circle fa-fw mr-2"></span>
+                    <span class="menu-collapsed d-none">Menu Flow Creation</span>
+                </div>
+            </a>
+            <a data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
+                <div class="text-nowrap d-flex w-100 justify-content-start align-items-center">
+                    <span id="collapse-icon" class="fa fa-2x mr-3"></span>
+                    <span id="collapse-text" class="menu-collapsed d-none">Collapse</span>
+                </div>
+            </a>
+        </ul>
+    </div>
+    
+    <div class="container-fluid">
+    	 <div class="row">
+    	 	<div class="col-12">
+           <router-outlet></router-outlet>
+           </div>
+           </div>
+  </div>
+   </div>

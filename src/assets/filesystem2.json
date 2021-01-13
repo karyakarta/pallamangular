@@ -1,0 +1,34 @@
+{
+	"data": [
+		{
+			"data": {
+				"description": "User File Format Header",
+				"rawdata": "",
+				"info": "M0101001 (M0101001_ZHV)"
+			},
+			"children": [
+				{
+					"data": {
+						"description": "File Identifier",
+						"rawdata": "M0600",
+						"info": "8451"
+					}
+				},
+				{
+					"data": {
+						"description": "Data Flow Reference and Flow Version Number",
+						"rawdata": "M0605",
+						"info": "M0101001"
+					}
+				},
+				{
+					"data": {
+						"description": "From Role Code",
+						"rawdata": "M0604",
+						"info": ""
+					}
+				}
+			]
+		}
+	]
+}
